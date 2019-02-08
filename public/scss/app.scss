@@ -1,0 +1,291 @@
+@import "fonts";
+@import "_vars";
+
+body {
+
+}
+
+#app {
+  font-family: SuisseIntl, sans-serif;
+
+  .row {
+    padding: 0 60px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .contacts_static {
+    padding: 60px 60px 100px;
+    .title {
+      font-size: 50px;
+      color: $colorSchema1;
+    }
+    .wrapper {
+      margin: 50px 0 0 0;
+      display: flex;
+      .contact_headquarters {
+        width: 560px;
+        margin: 0 140px 0 0;
+        justify-content: flex-start;
+        .subtitle {
+          font-size: 32px;
+          margin: 0 0 50px;
+          span:first-child {
+            color: $colorSchema2;
+          }
+          span {
+            color: $colorSchema1;
+          }
+        }
+        .left {
+          display: inline-block;
+          vertical-align: top;
+          margin: 0 60px 0 0;
+          p {
+            margin: 0 0 17px;
+          }
+          .headquarters_phone {
+            font-size: 26px;
+            color: $colorSchema2;
+            margin: 40px 0 0 0;
+          }
+        }
+        .right {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 15px;
+          div {
+            margin: 0 0 17px;
+          }
+          p {
+            color: $colorSchema2;
+            text-transform: uppercase;
+            margin: 0 0 17px;
+          }
+        }
+
+      }
+      .contact_support {
+        width: 530px;
+        justify-content: flex-end;
+        .subtitle {
+          font-size: 32px;
+          margin: 0 0 50px;
+          span:first-child {
+            color: $colorSchema1;
+          }
+          span {
+            color: $colorSchema2;
+          }
+        }
+        .content {
+          font-size: 15px;
+          line-height: 24px;
+        }
+        .support_phone {
+          margin: 60px 0 0 0;
+          font-size: 26px;
+          color: $colorSchema2;
+        }
+      }
+    }
+  }
+
+  .contacts_map {
+    width: 100%;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      color: white;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .left {
+        padding: 100px 0 0 0;
+        .title {
+          font-size: 34px;
+          margin: 0 0 50px;
+        }
+        .tabs-component {
+          .tabs-component-tabs {
+            display: flex;
+            .tabs-component-tab.is-active {
+              .tabs-component-tab-a {
+                color: $colorSchema2;
+              }
+            }
+            .tabs-component-tab {
+
+              .tabs-component-tab-a {
+                font-size: 11px;
+                text-transform: uppercase;
+                display: block;
+                margin: 0 25px 0 0;
+
+              }
+            }
+
+          }
+          .tabs-component-panels {
+            margin: 55px 0 0 0;
+            .tabs-component-panel {
+              .tap_title {
+                font-size: 26px;
+                margin: 0 0 40px;
+              }
+              .tab_content {
+                font-size: 11px;
+                p {
+                  margin: 0 0 13px 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .right {
+        align-self: flex-end;
+        .map {
+          position: relative;
+          .icon {
+            width: 30px;
+            height: 30px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            background: $colorSchema2;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+          }
+        }
+      }
+    }
+
+  }
+
+  .contacts_form {
+    width: 100%;
+    padding: 0 0 100px;
+    .row {
+      display: flex;
+
+      .left {
+        width: 540px;
+        margin: 0 75px 0 0;
+        padding: 100px 0 0 0;
+        .title {
+          color: white;
+          font-size: 34px;
+          margin: 0 0 50px;
+        }
+        .form {
+          .form_item {
+
+            .form_flex.last {
+              border: none;
+              label{
+                span{
+                  color: white;
+                }
+              }
+            }
+            .form_flex {
+              display: flex;
+              position: relative;
+            }
+            label {
+              color: $colorSchema3;
+              font-size: 18px;
+              padding: 20px 50px 20px 0;
+              min-width: 55px;
+              position: absolute;
+            }
+            label.checkbox_label {
+              display: flex;
+              cursor: pointer;
+              position: relative;
+              margin-right: 15px;
+              width: 100%;
+              padding: 20px 0 20px 25px;
+              span {
+                flex-grow: 0;
+              }
+            }
+            label.checkbox_label:before {
+              content: "";
+              flex-grow: 1;
+              width: 16px;
+              height: 16px;
+              margin-right: 10px;
+              position: absolute;
+              left: 0;
+              background: white;
+            }
+            input[type="checkbox"] {
+              flex-grow: 0;
+              margin: 20px 20px 0 0;
+              display: none;
+            }
+            .checkbox label:before {
+              border-radius: 3px;
+            }
+            input[type=checkbox]:checked + label:before {
+              content: url(../checked_mark.png);
+              text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+              font-size: 15px;
+              color: white;
+              text-align: center;
+              line-height: 15px;
+            }
+            input {
+              border: none;
+              background: none;
+              color: $colorSchema3;
+              flex-grow: 1;
+              padding: 20px 0 20px 105px;
+              border-bottom: solid 1px $colorSchema3;
+              &:focus{
+                border-bottom: solid 1px white;
+                  color: white;
+              }
+            }
+            input:focus + label{
+              color: white;
+            }
+          }
+        }
+        .btn {
+          margin: 50px 0 0 0;
+          button {
+            background: #262626;
+            color: white;
+            font-size: 11px;
+            text-transform: uppercase;
+            width: 280px;
+            height: 80px;
+            padding: 32px 0;
+            border: none;
+          }
+          button.disabled{
+              background: #666666;
+          }
+        }
+      }
+      .right {
+        width: 490px;
+        line-height: 32px;
+        margin: 198px 0 0;
+      }
+    }
+  }
+}
+.error_message{
+  color: red;
+  margin: 10px 0 0 0;
+}
+

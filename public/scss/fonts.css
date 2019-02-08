@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url("../../src/assets/fonts/SuisseIntl.woff2") format("woff2"), url("../../src/assets/fonts/SuisseIntl.woff") format("woff"); }
+@font-face {
+  font-family: 'SuisseIntl-Light';
+  src: url("../../src/assets/fonts/SuisseIntl-Light.woff2") format("woff2"), url("../../src/assets/fonts/SuisseIntl-Light.woff") format("woff"); }
+@font-face {
+  font-family: 'SuisseIntl-SemiBold';
+  src: url("../../src/assets/fonts/SuisseIntl-SemiBold.woff2") format("woff2"), url("../../src/assets/fonts/SuisseIntl-SemiBold.woff") format("woff"); }
+
+/*# sourceMappingURL=fonts.css.map */
